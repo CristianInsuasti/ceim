@@ -16,7 +16,7 @@ class CrearColumnasNombreDescripcionEnPisos extends Migration
         Schema::table('pisos', function (Blueprint $table) {
             $table->text('nombre');
             $table->text('descripcion');
-            $table->number('idEdificio');
+            $table->integer('idEdificio');
         });
     }
 
