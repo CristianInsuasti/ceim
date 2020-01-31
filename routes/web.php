@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 
 Route::resource('/Edificios', 'EdificioController');
+Route::resource('/Pisos', 'PisoController');

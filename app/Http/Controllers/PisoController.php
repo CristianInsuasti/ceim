@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Piso;
 use Illuminate\Http\Request;
 
 class PisoController extends Controller
@@ -13,7 +14,7 @@ class PisoController extends Controller
      */
     public function index()
     {
-        //
+        return Piso::all();
     }
 
     /**
