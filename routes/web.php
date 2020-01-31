@@ -22,3 +22,4 @@ Route::resource('/Edificios', 'EdificioController');
 Route::resource('/Pisos', 'PisoController');
 Route::resource('/Areas', 'AreaController');
 Route::resource('/Estantes', 'EstanteController');
+Route::resource('/cajas', 'CajaController');
