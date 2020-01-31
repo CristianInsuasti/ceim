@@ -28,9 +28,9 @@ class AgregarColumnasNombreDescripcionIdPisoEnAreas extends Migration
     public function down()
     {
         Schema::table('areas', function (Blueprint $table) {
-            $table->text('nombre');
-            $table->text('descripcion');
-            $table->integer('idPiso');
+            $table->dropColumn('nombre');
+            $table->dropColumn('descripcion');
+            $table->dropColumn('idPiso');
         });
     }
 }
