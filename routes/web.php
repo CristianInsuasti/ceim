@@ -11,6 +11,8 @@
 |
 */
 
+// use Illuminate\Routing\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,3 +20,5 @@ Route::get('/', function () {
 
 Route::resource('/Edificios', 'EdificioController');
 Route::resource('/Pisos', 'PisoController');
+Route::resource('/Areas', 'AreaController');
+Route::resource('/Estantes', 'EstanteController');
